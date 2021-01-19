@@ -1,0 +1,32 @@
+.btn {
+    background: transparent linear-gradient(248deg, #1B92C8 0%, #2C3636 100%) 0% 0% no-repeat;
+    opacity: 1;
+    color: #FFF;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px 30px;
+
+    &--white {
+        background: #ffffff;
+        border-width: 1px;
+        border-color: #185F7F;
+        color: #185F7F;
+    }
+
+    &--change-text::after {
+        content: "Our Works";
+    }
+
+    &--change-text:hover::after {
+        content: "Know More";
+    }
+
+}
+
+.btn:hover {
+    background: transparent linear-gradient(248deg, #1B92C8 0%, #2C3636 100%) 0% 0% no-repeat padding-box;
+    color: #ffffff;
+    transition: 0.5s;
+}

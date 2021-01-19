@@ -1,0 +1,46 @@
+.site-header {
+    width: 100%;
+
+    a {
+        &:hover {
+            color: #185F7F;
+        }
+    }
+
+    &__logo {
+        img {
+            width: 70%;
+        }
+    }
+
+    &__menu-icon {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    &__search-container {
+        display: none;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    &__btn-container {
+        display: none;
+        width: 169px;
+        padding: 20px 0;
+        margin-left: 20px;
+        a:hover {
+            color: $background-color;
+        }
+    }
+
+}
+
+.container {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}

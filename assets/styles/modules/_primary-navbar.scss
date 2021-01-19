@@ -1,0 +1,19 @@
+.primary-navbar {
+
+    &__items {
+        display: none;
+        text-transform: capitalize;
+        margin-left: 20px;
+
+        li {
+            margin-top: 20px;
+            margin-right: 50%;
+        }
+    }
+
+}  
+
+.show-items {
+    display: flex;
+    flex-direction: column;
+}

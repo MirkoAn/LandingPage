@@ -1,0 +1,15 @@
+.search {
+    input {
+        width: 326px;
+        height: 40px;
+        background: url('/assets/images/search.svg') no-repeat 290px;
+        padding-right: 10px;
+        padding: 5px;
+        border: 1px solid #C6BAF8;
+        border-radius: 4px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

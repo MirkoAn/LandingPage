@@ -1,4 +1,8 @@
 @import './node_modules/reset-css/sass/reset';
-@import './assets/styles/base/global';
-@import './assets/styles/base/mixins';
 @import './assets/styles/base/variables';
+@import './assets/styles/base/mixins';
+@import './assets/styles/base/global';
+@import './assets/styles/modules/site-header';
+@import './assets/styles/modules/primary-navbar';
+@import './assets/styles/modules/search';
+@import './assets/styles/modules/btn';

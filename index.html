@@ -9,13 +9,36 @@
 </head>
 <body>
     <!--Header Section-->
-    <h2>Hello World</h2>
 
-    <header>
-        <!--Navigation bar-->
-        <nav>
-            <!--TO DO-->
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__logo">
+                <img src="./assets/images/shokworks-logo.svg" alt="shokworks-logo">
+            </div>
+            <div class="site-header__menu-icon">
+                <a href="#" class="menu-icon">
+                    <svg height="24" viewBox="0 -53 384 384" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"></path><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"></path><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"></path></svg>
+                </a>
+            </div>
+        </div>
+        <nav class="primary-navbar">
+            <ul class="primary-navbar__items items">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">product</a></li>
+                <li><a href="#">career</a></li>
+                <li><a href="#">blog</a></li>
+            </ul>
         </nav>
+        <div class="site-header__search-container items">
+            <div class="search">
+                <input class="searchBox" type="search" placeholder="Search Here" name="search">
+            </div>
+        </div>
+        <div class="site-header__btn-container items">
+            <a href="#" class="btn">Contact us</a>
+        </div>
     </header>
 
     <!--Hero section-->
@@ -65,5 +88,6 @@
     <footer>
         <!--TO DO-->
     </footer>
+    <script type="module" src="./assets/scripts/modules/toggle-navbar.js"></script>
 </body>
 </html>

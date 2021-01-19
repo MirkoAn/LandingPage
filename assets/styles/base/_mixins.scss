@@ -1,17 +1,116 @@
-@mixin atSmall {
-    @media(min-width: 530px){
-        @content;
-    }
+/* Mixin for responsive fonts
+*****************************/
+
+@function calculateRem($size) {
+	$remSize: $size / 16px;
+	@return $remSize * 1rem;
 }
 
-@mixin atMedium {
-    @media(min-width: 800px){
-        @content;
-    }
-}   
-
-@mixin atLarge {
-    @media(min-width: 1010px){
-        @content;
-    }
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+	line-height: calculateRem($size)*1.5;	
 }
+
+/* Media Queries Mixin
+**********************/
+
+@mixin media ($breakpoint) {  
+
+    @if $breakpoint == tablet {  
+      @media only screen and (min-width: 768px) { @content; }  
+    }  
+    
+    @else if $breakpoint == desktop-s {  
+      @media only screen and (min-width: 992px) { @content; }  
+    } 
+    
+    @else if $breakpoint == desktop-m {  
+      @media only screen and (min-width: 1200px) { @content; }  
+    } 
+    
+    @else if $breakpoint == desktop-l {  
+      @media only screen and (min-width: 1480px) { @content; }  
+    } 
+    
+    @else if $breakpoint == desktop-xl {  
+      @media only screen and (min-width: 1780px) { @content; }  
+    } 
+  
+    @else if $breakpoint == mobile-only {  
+      @media only screen and (max-width: 768px) { @content; }  
+    }
+  
+    @else if $breakpoint == tablet-p-only {  
+      @media only screen and (min-width: 768px) and (max-width: 992px) and (orientation : portrait) { @content; }  
+    }  
+    
+    @else if $breakpoint == tablet-l-only {  
+      @media only screen and (min-width: 768px) and (max-width: 992px) and (orientation : landscape) { @content; }  
+    } 
+    
+    @else if $breakpoint == desktop-s-only {  
+      @media only screen and (min-width: 768px) and (max-width: 1200px) { @content; }  
+    } 
+    
+    @else if $breakpoint == desktop-m-only {  
+      @media only screen and (min-width: 1200px) and (max-width: 1480px) { @content; }  
+    } 
+  }
+  
+  //Grids mixins
+  
+// Ensure CSS grid works with IE 11 spec.
+// https://css-tricks.com/browser-compatibility-css-grid-layouts-simple-sass-mixins/
+// sass-lint:disable no-vendor-prefixes, no-duplicate-properties
+@mixin display-grid {
+    display: -ms-grid;
+    display: grid;
+  }
+  
+  // $columns values should be delimited by a space
+  @mixin grid-template-columns($columns...) {
+    -ms-grid-columns: $columns;
+    grid-template-columns: $columns;
+  }
+  
+  // $rows values should be delimited by a space
+  @mixin grid-template-rows($rows...) {
+    -ms-grid-rows: $rows;
+    grid-template-rows: $rows;
+  }
+  
+  // Can be used in combination with above grid-template-X mixins.
+  // These result in the same output:
+  // @include grid-template-columns(10px grid-repeat(4, 20px) 30px);
+  // @include grid-template-columns(10px 20px 20px 20px 20px 30px);
+  @function grid-repeat($repeat, $stuff: 1fr) {
+    $list: ();
+    @for $i from 1 through $repeat {
+      $list: append($list, $stuff, space);
+    }
+    @return $list;
+  }
+  
+  @mixin grid-column($col-start, $col-end) {
+    -ms-grid-column: $col-start;
+    -ms-grid-column-span: $col-end - $col-start;
+    grid-column: #{$col-start} / #{$col-end};
+  }
+  
+  @mixin grid-row($row-start, $row-end) {
+    -ms-grid-row: $row-start;
+    -ms-grid-row-span: $row-end - $row-start;
+    grid-row: #{$row-start} / #{$row-end};
+  }
+  
+  @mixin grid-align-self($value) {
+    -ms-grid-row-align: $value;
+    align-self: $value;
+  }
+  
+  @mixin grid-justify-self($value) {
+    -ms-grid-column-align: $value;
+    justify-self: $value;
+  }
+  
