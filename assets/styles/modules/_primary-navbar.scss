@@ -1,17 +1,33 @@
 .primary-navbar {
+    @include media(desktop-s) {
+        margin-left: auto;
+    }
 
     &__items {
         display: none;
         text-transform: capitalize;
         margin-left: 20px;
+      
+        @include media(desktop-s) {
+            display: flex;
+            align-items: center;
+        }
+
+        @include media(desktop-l) {
+            @include font-size(17px);
+        }
 
         li {
             margin-top: 20px;
-            margin-right: 50%;
+            @include media(desktop-s) {
+                margin: 0;
+                padding-right: 22px;
+            }
         }
     }
-
 }  
+
+//Stlyes for the toggle menu class
 
 .show-items {
     display: flex;

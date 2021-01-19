@@ -1,15 +1,29 @@
 .search {
+
     input {
-        width: 326px;
-        height: 40px;
-        background: url('/assets/images/search.svg') no-repeat 290px;
-        padding-right: 10px;
-        padding: 5px;
+        width: 280px;
+        height: 50px;
+        background: url('/assets/images/search.svg') no-repeat 250px;
+        padding: 5px 10px 5px 10px;
         border: 1px solid #C6BAF8;
         border-radius: 4px;
 
+        &::placeholder {
+            color: #CCCCCC;
+        }
+
         &:focus {
             outline: none;
+        }
+
+        @include media(desktop-m) {
+            width: 260px;
+            background: url('/assets/images/search.svg') no-repeat 230px;
+        }
+
+        @include media(desktop-l) {
+            width: 326px;
+            background: url('/assets/images/search.svg') no-repeat 290px;
         }
     }
 }

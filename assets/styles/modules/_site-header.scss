@@ -1,6 +1,12 @@
 .site-header {
     width: 100%;
 
+    @include media(desktop-s) {
+        display: flex;
+        align-items: center;
+        margin-top: 37px;
+    }
+
     a {
         &:hover {
             color: #185F7F;
@@ -8,33 +14,68 @@
     }
 
     &__logo {
+
         img {
             width: 70%;
+
+            @include media(desktop-s) {
+                width: 300px;
+                height: 28px;
+                margin-bottom: 15px;
+            }
+            @include media(desktop-l) {
+                width: 330px;
+            }
         }
     }
 
     &__menu-icon {
         margin-left: auto;
         margin-right: 20px;
+
+            @include media(desktop-s) {
+            display: none;
+        }
     }
 
     &__search-container {
         display: none;
         margin-left: 20px;
         margin-top: 20px;
+
+        @include media(desktop-m) {
+            display: flex;
+            margin-top: 0;
+        }
     }
 
     &__btn-container {
         display: none;
-        width: 169px;
-        padding: 20px 0;
         margin-left: 20px;
+        margin-top: 20px;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 169px;
+            height: 58px;
+        }
+
         a:hover {
             color: $background-color;
         }
-    }
 
+        @include media(desktop-s) {
+            display: flex;
+            margin-left: 42px;
+            margin-top: 0;
+            margin-right: 40px;
+        }
+    }
 }
+
+// Stlyes for the container of mobile menu navigation bar
 
 .container {
     display: flex;
