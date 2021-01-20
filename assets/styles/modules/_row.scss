@@ -10,6 +10,12 @@
         justify-content: space-around;
     }
 
+    &--reverse {
+        @include media(desktop-s) {
+            flex-direction: row-reverse;
+        }
+    }
+
     &__large-6 {
         
         @include media(desktop-s) {
@@ -20,13 +26,11 @@
         &--bg-image {
             background: url("/assets/images/Group\ 2258.png");
         }
-    }
 
-/*
         &--left-padding {
-            padding-left: 90px;
+            @include media(desktop-s) {
+                padding-left: 90px;
+            }
         }
     }
-
-*/
 }

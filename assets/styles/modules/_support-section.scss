@@ -1,0 +1,48 @@
+.support-section {
+    margin: 40px auto;
+    text-align: center;
+
+    @include media(desktop-m) {
+        padding: 0 246px 70px 286px;
+        text-align: left;
+    }
+
+    img {
+        width: 350px;
+
+        @include media(desktop-s) {
+            width: 450px;
+        }
+
+        @include media(desktop-l) {
+            width: 678px;
+            height: 602px;
+        }
+    }
+
+    h2 {
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+        @include media(desktop-s) {
+            margin-bottom: 41px;
+            padding-top: 125px;
+        }
+    }
+
+    p {
+        padding: 0 10px;
+        font-family: 'Poppins', sans-serif;
+        @include font-size(14px);
+        color: #555555;
+
+        @include media(desktop-s) {
+            @include font-size(18px)
+        }
+    }
+
+    .bold-text {
+        font-weight: 600;
+    }
+}
