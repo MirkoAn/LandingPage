@@ -1,14 +1,24 @@
 .work-process {
     margin: 0 auto;
     text-align: center;
+
+    @include media(desktop-m) {
+        padding: 0 246px 70px 286px;
+        text-align: left;
+    }
     
     img {
         width: 350px;
+
+        @include media(desktop-s) {
+            width: 634px;
+            height: 546px;
+        }
     }
 
     h2 {
         text-transform: capitalize;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         margin-top: 20px;
 
         @include media(desktop-s) {
@@ -48,8 +58,8 @@
             justify-content: center;
             width: 182px;
             height: 62px;
-            font-size: 19px;
             font-weight: 500;
+            @include font-size(19px);
         }
     }
 

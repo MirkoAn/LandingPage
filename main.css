@@ -437,13 +437,27 @@ a {
   text-align: center;
 }
 
+@media only screen and (min-width: 1200px) {
+  .work-process {
+    padding: 0 246px 70px 286px;
+    text-align: left;
+  }
+}
+
 .work-process img {
   width: 350px;
 }
 
+@media only screen and (min-width: 992px) {
+  .work-process img {
+    width: 634px;
+    height: 546px;
+  }
+}
+
 .work-process h2 {
   text-transform: capitalize;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-top: 20px;
 }
 
@@ -500,8 +514,10 @@ a {
           justify-content: center;
   width: 182px;
   height: 62px;
-  font-size: 19px;
   font-weight: 500;
+  font-size: 19px;
+  font-size: 1.1875rem;
+  line-height: 1.78125rem;
 }
 
 .row {
@@ -517,19 +533,38 @@ a {
           justify-content: center;
   margin: 0 auto;
   /*
-    &__large-6 {
-        flex: 50%;
-        max-width: 50%;
-
-        &--bg-image {
-            background: url('/app/assets/images/Group\ 2258.png') top center no-repeat;
-        }
-
         &--left-padding {
             padding-left: 90px;
         }
     }
 
 */
+}
+
+@media only screen and (min-width: 992px) {
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .row__large-6 {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
+}
+
+.row__large-6--bg-image {
+  background: url("/assets/images/Group 2258.png");
 }
 /*# sourceMappingURL=main.css.map */

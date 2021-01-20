@@ -4,18 +4,25 @@
     justify-content: center;
     margin: 0 auto;
 
-    //display: flex;
-    //|flex-flow: row wrap;
-    //justify-content: space-around;
-/*
-    &__large-6 {
-        flex: 50%;
-        max-width: 50%;
+    @include media(desktop-s) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
-        &--bg-image {
-            background: url('/app/assets/images/Group\ 2258.png') top center no-repeat;
+    &__large-6 {
+        
+        @include media(desktop-s) {
+            flex: 50%;
+            max-width: 50%;
         }
 
+        &--bg-image {
+            background: url("/assets/images/Group\ 2258.png");
+        }
+    }
+
+/*
         &--left-padding {
             padding-left: 90px;
         }
