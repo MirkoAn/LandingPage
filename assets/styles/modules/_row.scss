@@ -1,0 +1,25 @@
+.row {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 0 auto;
+
+    //display: flex;
+    //|flex-flow: row wrap;
+    //justify-content: space-around;
+/*
+    &__large-6 {
+        flex: 50%;
+        max-width: 50%;
+
+        &--bg-image {
+            background: url('/app/assets/images/Group\ 2258.png') top center no-repeat;
+        }
+
+        &--left-padding {
+            padding-left: 90px;
+        }
+    }
+
+*/
+}

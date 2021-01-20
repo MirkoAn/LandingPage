@@ -84,13 +84,15 @@ h1 {
   line-height: 3.375rem;
 }
 
-/*
 h2 {
-    font-family: $font2;
-    color: $titles-color;
-    @include font-size(43px);
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 2.8125rem;
 }
 
+/*
 h3 {
     font-family: $font2;
     text-align: center;
@@ -428,5 +430,106 @@ a {
   height: 62px;
   font-size: 19px;
   font-weight: 500;
+}
+
+.work-process {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.work-process img {
+  width: 350px;
+}
+
+.work-process h2 {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  .work-process h2 {
+    margin-bottom: 41px;
+    padding-top: 125px;
+  }
+}
+
+.work-process p {
+  padding: 0 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  color: #555555;
+}
+
+@media only screen and (min-width: 992px) {
+  .work-process p {
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 1.40625rem;
+  }
+}
+
+.work-process .bold-text {
+  font-weight: 600;
+}
+
+.work-process__btn-container {
+  display: inline-block;
+  border: 1px solid #185F7F;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  .work-process__btn-container {
+    margin-top: 60px;
+  }
+}
+
+.work-process__btn-container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 182px;
+  height: 62px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  /*
+    &__large-6 {
+        flex: 50%;
+        max-width: 50%;
+
+        &--bg-image {
+            background: url('/app/assets/images/Group\ 2258.png') top center no-repeat;
+        }
+
+        &--left-padding {
+            padding-left: 90px;
+        }
+    }
+
+*/
 }
 /*# sourceMappingURL=main.css.map */

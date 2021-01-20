@@ -15,13 +15,14 @@ h1 {
     color: $titles-color;
     @include font-size(36px);
 }
-/*
+
 h2 {
     font-family: $font2;
     color: $titles-color;
-    @include font-size(43px);
+    @include font-size(30px);
 }
 
+/*
 h3 {
     font-family: $font2;
     text-align: center;
