@@ -1,0 +1,58 @@
+footer {
+    display: grid;
+    padding-top: 121px;
+    
+}
+
+.site-footer__logo {
+    margin: 0 auto 95px auto;
+    img {
+        width: 484px;
+    }
+}
+
+.site-footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    justify-content: space-around;
+    height: 564px;
+    background: url('/assets/images/Group\ 2793.png') bottom no-repeat;
+    background-size: 100% 50%;
+
+    &__main-item {
+        padding: 20px;
+    }
+
+    .ft-title {
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        color: #101C21;
+        font-weight: 600;
+        margin-bottom: 28px;
+    }
+
+    li a {
+        font-size: 15px;
+        color: #777777;
+        line-height: 38px;
+    }
+
+    p {
+         color: #777777;;
+         line-height: 1.7;
+         margin-bottom: 25px;
+    }
+
+    .contact-img {
+        margin-right: 10px;
+    }
+
+    .social-layout {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+    }
+}
