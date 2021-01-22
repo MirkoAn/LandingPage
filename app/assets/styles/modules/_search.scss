@@ -18,12 +18,12 @@
 
         @include media(desktop-m) {
             width: 260px;
-            background: url('/assets/images/search.svg') no-repeat 230px;
+            background: url('/app/assets/images/search.svg') no-repeat 230px;
         }
 
         @include media(desktop-l) {
             width: 326px;
-            background: url('/assets/images/search.svg') no-repeat 290px;
+            background: url('/app/assets/images/search.svg') no-repeat 290px;
         }
     }
 }

@@ -313,14 +313,14 @@ a {
 @media only screen and (min-width: 1200px) {
   .search input {
     width: 260px;
-    background: url("/assets/images/search.svg") no-repeat 230px;
+    background: url("/app/assets/images/search.svg") no-repeat 230px;
   }
 }
 
 @media only screen and (min-width: 1480px) {
   .search input {
     width: 326px;
-    background: url("/assets/images/search.svg") no-repeat 290px;
+    background: url("/app/assets/images/search.svg") no-repeat 290px;
   }
 }
 
@@ -362,7 +362,7 @@ a {
   padding: 40px 0;
   text-align: center;
   text-transform: capitalize;
-  background: url("/assets/images/Group 2258.png");
+  background: url("/app/assets/images/Group 2258.png");
 }
 
 .hero-section img {
@@ -372,7 +372,7 @@ a {
 @media only screen and (min-width: 1200px) {
   .hero-section {
     padding: 70px 0;
-    background: url("/assets/images/Group 2258.png") center no-repeat;
+    background: url("/app/assets/images/Group 2258.png") center no-repeat;
     background-size: cover;
   }
   .hero-section img {
@@ -482,7 +482,7 @@ a {
 }
 
 .row__large-6--bg-image {
-  background: url("/assets/images/Group 2258.png");
+  background: url("/app/assets/images/Group 2258.png");
 }
 
 @media only screen and (min-width: 992px) {
@@ -642,6 +642,146 @@ a {
   font-weight: 600;
 }
 
+.get-in-touch {
+  margin-top: 124px;
+  background: url("/app/assets/images/Rectangle 511.png");
+  padding: 75px 16px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .get-in-touch {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  .get-in-touch {
+    background: url("/app/assets/images/banner-1.png") bottom 97px right 157px no-repeat padding-box, url("/app/assets/images/Group 2794.png") top 300px right 660px no-repeat, url("/app/assets/images/Group 2258.png") top center no-repeat, url("/app/assets/images/Rectangle 511.png") top center;
+    padding: 75px 50px 71px 187px;
+  }
+}
+
+.get-in-touch h2 {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.get-in-touch .bold-text {
+  font-weight: 700;
+}
+
+.contact-form {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 20px 60px #3E3E3E29;
+          box-shadow: 0px 20px 60px #3E3E3E29;
+  border-radius: 8px;
+  padding: 72px 63px;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1200px) {
+  .contact-form {
+    width: 929px;
+    height: 784px;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  .contact-form {
+    margin: 0;
+  }
+}
+
+.contact-form label {
+  font-weight: 600;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.contact-form input {
+  display: block;
+  width: 100%;
+  border: none;
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.40625rem;
+}
+
+.contact-form input:focus {
+  outline: none;
+}
+
+.contact-form .fname,
+.contact-form .lname,
+.contact-form .email,
+.contact-form .problems,
+.contact-form .message {
+  border-bottom: 1px solid #C2C2C2;
+}
+
+.contact-form .message {
+  padding-top: 70px;
+}
+
+@media only screen and (min-width: 992px) {
+  .contact-form .two-col {
+    float: left;
+    width: 50%;
+    padding-right: 40px;
+  }
+}
+
+.contact-form select {
+  width: 100%;
+  border: none;
+  margin-top: 20px;
+  color: #555555;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.40625rem;
+}
+
+.contact-form select:focus {
+  outline: none;
+}
+
+.contact-form p {
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+  .contact-form p {
+    margin-bottom: 50px;
+  }
+}
+
+.contact-form__btn-container {
+  display: inline-block;
+  border: 1px solid #185F7F;
+  border-radius: 4px;
+}
+
+.contact-form__btn-container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 182px;
+  height: 62px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
 footer {
   display: -ms-grid;
   display: grid;
@@ -670,7 +810,7 @@ footer {
 
 .site-footer {
   text-align: center;
-  background: url("/assets/images/Group 2793.png") bottom no-repeat;
+  background: url("/app/assets/images/Group 2793.png") bottom no-repeat;
 }
 
 @media only screen and (min-width: 992px) {

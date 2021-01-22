@@ -112,7 +112,46 @@
     <!--Get in touch section-->
 
     <section class="get-in-touch">
-        <!--TO DO-->
+
+        <h2>Facing Problem? <br><span class="bold-text">Lets Get In Touch Now</span></h2>
+
+        <form action="/" method="post" class="contact-form">
+            <p class="two-col">
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" name="fname" class="fname" placeholder="Robert Lee"><br>
+            </p class="two-col">
+
+            <p class="two-col">
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lname" class="lname" placeholder="Anderson"><br>
+            </p>
+
+            <p>
+                <label for="email">Your Email Address</label><br>
+                <input type="email" name="email" id="email" class="email" placeholder="kevin.jones@mail.com"><br>
+            <p>
+            
+            <p>
+                <label for="problems">Which related problem you are facing?</label><br>
+                <select name="problems" id="problems" class="problems">
+                    <option style="color: #C2C2C2" value="" disabled selected >Select one</option>
+                    <option value="problem1">problem 1</option>
+                    <option value="problem2">problem 2</option>
+                    <option value="problem3">problem 3</option>
+                    <option value="problem4">problem 4</option>
+                </select><br>
+            <p>
+
+            <p>
+                <label for="message">Type your message</label><br>
+                <input type="textarea" class="message" name="message" id="message" placeholder="Here goes your message">
+            </p>
+    
+            <div class="contact-form__btn-container">
+                <a href="#" class="btn btn--white btn--change-text"></a>
+            </div>
+        </form>
+        
     </section>
 
     <!--Footer Section-->

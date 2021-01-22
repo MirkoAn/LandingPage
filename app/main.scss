@@ -1,4 +1,4 @@
-@import './node_modules/reset-css/sass/reset';
+@import '../node_modules/reset-css/sass/reset';
 @import './assets/styles/base/variables';
 @import './assets/styles/base/mixins';
 @import './assets/styles/base/global';
@@ -10,4 +10,6 @@
 @import './assets/styles/modules/row';
 @import './assets/styles/modules/work-process';
 @import './assets/styles/modules/support-section';
+@import './assets/styles/modules/get-in-touch';
+@import './assets/styles/modules/contact-form';
 @import './assets/styles/modules/site-footer';

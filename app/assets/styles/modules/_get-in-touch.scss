@@ -1,0 +1,27 @@
+.get-in-touch {
+    margin-top: 124px;
+    background: url('/app/assets/images/Rectangle\ 511.png'); 
+    padding: 75px 16px;
+    width: 100%;
+
+    @include media(desktop-m) {
+        margin: 0 auto;
+    }
+
+    @include media(desktop-l) {
+        background: url('/app/assets/images/banner-1.png') bottom 97px right 157px no-repeat padding-box,
+        url('/app/assets/images/Group\ 2794.png') top 300px right 660px no-repeat,
+        url('/app/assets/images/Group\ 2258.png') top center no-repeat,
+        url('/app/assets/images/Rectangle\ 511.png') top center ; 
+        padding: 75px 50px 71px 187px;
+    }
+
+    h2 {
+    text-align: center;
+    margin-bottom: 48px;
+    }
+
+    .bold-text {
+    font-weight: 700;
+    }
+}
