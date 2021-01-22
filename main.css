@@ -649,25 +649,44 @@ footer {
 }
 
 .site-footer__logo {
-  margin: 0 auto 95px auto;
+  margin: 0 auto 45px auto;
 }
 
 .site-footer__logo img {
-  width: 484px;
+  width: 350px;
+}
+
+@media only screen and (min-width: 992px) {
+  .site-footer__logo img {
+    width: 484px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .site-footer__logo {
+    margin-bottom: 95px;
+  }
 }
 
 .site-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 20px 30px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 564px;
+  text-align: center;
   background: url("/assets/images/Group 2793.png") bottom no-repeat;
-  background-size: 100% 50%;
+}
+
+@media only screen and (min-width: 992px) {
+  .site-footer {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px 30px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 564px;
+    background-size: 100% 50%;
+  }
 }
 
 .site-footer__main-item {
@@ -686,6 +705,10 @@ footer {
   font-size: 15px;
   color: #777777;
   line-height: 38px;
+}
+
+.site-footer li a:hover {
+  color: #185F7F;
 }
 
 .site-footer p {
@@ -709,8 +732,16 @@ footer {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 992px) {
+  .site-footer .social-layout {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=main.css.map */

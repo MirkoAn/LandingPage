@@ -5,20 +5,34 @@ footer {
 }
 
 .site-footer__logo {
-    margin: 0 auto 95px auto;
+    margin: 0 auto 45px auto;
     img {
-        width: 484px;
+        width: 350px;
+        @include media(desktop-s) {
+            width: 484px;
+        }
+    }
+
+    @include media(desktop-s) {
+        margin-bottom: 95px;
     }
 }
 
 .site-footer {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px 30px;
-    justify-content: space-around;
-    height: 564px;
+
+    text-align: center;
     background: url('/assets/images/Group\ 2793.png') bottom no-repeat;
-    background-size: 100% 50%;
+
+    @include media(desktop-s) {
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 30px;
+        justify-content: space-around;
+        height: 564px;
+        background-size: 100% 50%;
+    }
+
 
     &__main-item {
         padding: 20px;
@@ -36,6 +50,10 @@ footer {
         font-size: 15px;
         color: #777777;
         line-height: 38px;
+
+        &:hover {
+            color: $secondary-color;
+        }
     }
 
     p {
@@ -53,6 +71,10 @@ footer {
         flex-wrap: wrap;
         align-items: center;
         align-content: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
+
+        @include media(desktop-s) {
+            justify-content: space-between;
+        }
     }
 }
